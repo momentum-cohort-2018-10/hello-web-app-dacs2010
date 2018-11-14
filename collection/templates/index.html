@@ -10,9 +10,9 @@
     {% comment %} <p>{% if number %}Number exists!{% endif %}</p> {% endcomment %}
     <p class="item">There are {{ number|apnumber }} dog{{ number|pluralize:"es" }}!</p>
     <p class="item">There are {{ number }} walrus{{ number|pluralize:"es" }}!</p>
-    <p class="item">This is my name: {{ thing }}</p>
-    <p class="item">This is my name: {{ thing|slugify }}</p>
-    <p class="item">This is my name: {{ thing|title }}</p>
-    <p class="item">This is my name: {{ thing|truncatewords:1 }}</p>
+    {% for thing in things %}
+        <h2>{{thing.name}}</h2>
+        <p>{{thing.description}}</p>
+    {% endfor %}
 {% endblock content %}
     
