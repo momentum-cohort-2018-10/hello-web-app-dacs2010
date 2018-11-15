@@ -15,10 +15,11 @@
     
 <body>
     <header>
-            <div id="hello" class="top-bar">Hello Web App</div>
-            <div id="home" class="top-bar"><a href="{% url 'home' %}">Home</a></div>
-            <div id="about" class="top-bar"><a href="{% url 'about' %}">About</a></div>
-            <div id="contact" class="top-bar"><a href="{% url 'contact' %}">Contact</a></div>
+        <div class="top-bar">
+            <div id="home"><a href="{% url 'home' %}">Hello Web App</a></div>
+            <div id="about"><a href="{% url 'about' %}">About</a></div>
+            <div id="contact"><a href="{% url 'contact' %}">Contact</a></div>
+        </div>
     </header>
     {% block content %}{% endblock content %}
     {% block footer %}{% endblock footer %}

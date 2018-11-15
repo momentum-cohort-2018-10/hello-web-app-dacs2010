@@ -6,20 +6,21 @@
 
 {% block content %}
     <div class="item-wrapper">
-        <div class="item">Hello world!</div>
+        <!-- <div class="item">Hello world!</div>
         {% comment %} 
             <div class="item">{{ number }}</div> 
         {% endcomment %}
         {% comment %} 
             <div class="item">{% if number %}Number exists!{% endif %}</div> 
-        {% endcomment %}
-        <div class="item">There are {{ number|apnumber }} dog{{ number|pluralize:"es" }}!</div>
-        <div class="item">There are {{ number }} walrus{{ number|pluralize:"es" }}!</div>
+        {% endcomment %} -->
+        <!-- <div class="item">There are {{ number|apnumber }} dog{{ number|pluralize:"es" }}!</div>
+        <div class="item">There are {{ number }} walrus{{ number|pluralize:"es" }}!</div> -->
         {% for thing in things %}
             <div class="item">
-                <div>{{thing.name}}</div>
-                <img src="images/thing_images/default" alt="thing-image">
-                <div>{{thing.description}}</div>
+                <img class="image" src="https://picsum.photos/300?random" alt="thing-image">
+                <div class="name">{{thing.name}}</div>
+                <!-- <img src="static/images/thing_images/32418559471_c3767e515c_b.jpg" alt="thing-image"> -->
+                <div class="description" >{{thing.description}}</div>
             </div>
         {% endfor %}
     </div>

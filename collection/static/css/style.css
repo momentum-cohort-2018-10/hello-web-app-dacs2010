@@ -1,40 +1,76 @@
 body {
-    background-color: rgb(23, 32, 42);
+    background-color: rgb(240,240,240);
 }
 
 /* Classes */
 .top-bar {
     font-family: 'Federant', cursive;
     font-size: 50px;
-    color: rgb(231, 76, 60);
-    border: black solid 2px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 10px;
-    background-color: rgb(153, 163, 164);
+    color: black;
+    position: fixed;
+    top: 0;
+    background-image: url("https://picsum.photos/1500/601");
     text-align: center;
+    height: 150px;
     width: 100%;
-    margin: 5px;
+    margin: -8px;
 }
 
 .item-wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     grid-gap: 10px;
-    margin: 10px;
+    margin: 140px -8px 0px -8px;
 }
 
 .item {
+    top: 0px;
     font-family: 'Niramit', sans-serif;
     font-size: 30px;
-    background-color: rgb(170, 183, 184);
-    border-radius: 20% 0%;
+    background-color: rgb(240,240,240);
+    border: rgb(250, 250, 250) 50px solid;
     text-align: center;
-    height: 200px;
+    height: 500px;
     width: auto;
+    padding: 20px;
+}
+
+.name {
+    font-family: 'Niramit', sans-serif;
+    font-size: 40px;
+    margin: 149px 0px 100px 0px;
+}
+
+.image{
+    float: left;
+    margin: 75px;
+}
+
+.description{
+    margin: 1px;
+
+}
+
+a {
+    color: black;
+}
+
+a:visited{
+    color: black;
 }
  /* Ids */
-#hello {
-    /* z-index: 99; */
+#home{
+    margin: 34px 0px 0px 0px;
+}
+
+#about{
+    text-align: left;
+    font-size: 20px;
+    margin: -75px 0px 0px 10px;
+}
+
+#contact{
+    text-align: left;
+    font-size: 20px;
+    margin:10px;
 }
