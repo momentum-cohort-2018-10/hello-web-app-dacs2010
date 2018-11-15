@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load humanize %}
+{% block title %}
+    {{ thing.name }} - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    <div class="item-wrapper">
+        <div class="item">
+            <img class="image" src="https://picsum.photos/300?random" alt="thing-image">
+            <div class="name">{{thing.name}}</div>
+            <div class="description">{{thing.description}}</div>
+        </div>
+    </div>
+{% endblock content %}
