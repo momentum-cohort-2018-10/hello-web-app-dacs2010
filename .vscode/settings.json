@@ -4,4 +4,6 @@
         "--load-plugins",
         "pylint_django"
     ],
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
 }

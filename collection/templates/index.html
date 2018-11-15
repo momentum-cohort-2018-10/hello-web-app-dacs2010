@@ -5,14 +5,23 @@
 {% endblock title %}
 
 {% block content %}
-    <h2>Hello world!</h2>
-    {% comment %} <p>{{ number }}</p> {% endcomment %}
-    {% comment %} <p>{% if number %}Number exists!{% endif %}</p> {% endcomment %}
-    <p class="item">There are {{ number|apnumber }} dog{{ number|pluralize:"es" }}!</p>
-    <p class="item">There are {{ number }} walrus{{ number|pluralize:"es" }}!</p>
-    {% for thing in things %}
-        <h2>{{thing.name}}</h2>
-        <p>{{thing.description}}</p>
-    {% endfor %}
+    <div class="item-wrapper">
+        <div class="item">Hello world!</div>
+        {% comment %} 
+            <div class="item">{{ number }}</div> 
+        {% endcomment %}
+        {% comment %} 
+            <div class="item">{% if number %}Number exists!{% endif %}</div> 
+        {% endcomment %}
+        <div class="item">There are {{ number|apnumber }} dog{{ number|pluralize:"es" }}!</div>
+        <div class="item">There are {{ number }} walrus{{ number|pluralize:"es" }}!</div>
+        {% for thing in things %}
+            <div class="item">
+                <div>{{thing.name}}</div>
+                <img src="images/thing_images/default" alt="thing-image">
+                <div>{{thing.description}}</div>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock content %}
     
