@@ -10,6 +10,7 @@
             <img class="image" src="https://picsum.photos/300?random" alt="thing-image">
             <div class="name">{{thing.name}}</div>
             <div class="description">{{thing.description}}</div>
+            <a href="{% url 'edit_thing' slug=thing.slug %}">Edit me!</a>
         </div>
     </div>
 {% endblock content %}

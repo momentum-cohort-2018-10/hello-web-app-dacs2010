@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}
+    Edit {{ thing.name }} - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    <div class="item-wrapper">Change Me "{{ thing.name }}"</div>
+    <form role="form" action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock content %}

@@ -8,11 +8,13 @@
     <div class="item-wrapper">
         {% for thing in things %}
             <div class="item">
-                <img class="image" src="https://picsum.photos/300?random" alt="thing-image">
+                <a href="{% url 'thing_detail' slug=thing.slug %}">
+                    <img class="image" src="https://picsum.photos/300?random" alt="thing-image">
+                </a>
                 <div class="name">
                     <a href="{% url 'thing_detail' slug=thing.slug %}">{{thing.name}}</a>
                 </div>
-                <div class="description" >{{thing.description}}</div>
+                <div class="description" ><a href="{% url 'thing_detail' slug=thing.slug %}"></a>{{thing.description}}</a></div>
             </div>
         {% endfor %}
     </div>

@@ -1,15 +1,16 @@
+/*
 body {
     background-color: rgb(240,240,240);
 }
 
-/* Classes */
+
 .top-bar {
     font-family: 'Federant', cursive;
     font-size: 50px;
     color: black;
     position: fixed;
     top: 0;
-    background-image: url("https://picsum.photos/1500/601");
+    background-image: url("https://picsum.photos/1500/602");
     text-align: center;
     height: 150px;
     width: 100%;
@@ -58,7 +59,7 @@ a {
 a:visited{
     color: black;
 }
- /* Ids */
+
 #home{
     margin: 34px 0px 0px 0px;
 }
@@ -74,3 +75,4 @@ a:visited{
     font-size: 20px;
     margin:10px;
 }
+*/

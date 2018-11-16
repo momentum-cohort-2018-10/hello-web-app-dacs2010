@@ -5,7 +5,7 @@
 <head>
     <title>
         {% block title %}
-            My Hello Web App Project
+            Things
         {% endblock title %}
     </title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
@@ -16,9 +16,21 @@
 <body>
     <header>
         <div class="top-bar">
-            <div id="home"><a href="{% url 'home' %}">Hello Web App</a></div>
+            <div id="home"><a href="{% url 'home' %}">Things</a></div>
             <div id="about"><a href="{% url 'about' %}">About</a></div>
             <div id="contact"><a href="{% url 'contact' %}">Contact</a></div>
+            {% if user.is_authenticated %}
+            <div>
+                <a href="{% url 'auth_logout' %}">Logout</a>
+            </div>
+            {% else %}
+            <div>
+                <a href="{% url 'auth_login' %}">Login</a>
+            </div>
+            <div>
+                <a href="{% url 'registration_register' %}">Register</a>
+            </div>
+            {% endif %}
         </div>
     </header>
     {% block content %}{% endblock content %}
