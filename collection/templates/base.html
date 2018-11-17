@@ -16,9 +16,15 @@
 <body>
     <header>
         <div class="top-bar">
-            <div id="home"><a href="{% url 'home' %}">Things</a></div>
-            <div id="about"><a href="{% url 'about' %}">About</a></div>
-            <div id="contact"><a href="{% url 'contact' %}">Contact</a></div>
+            <div id="home">
+                <a href="{% url 'home' %}">Things</a>
+            </div>
+            <div id="about">
+                <a href="{% url 'about' %}">About</a>
+            </div>
+            <div id="contact">
+                <a href="{% url 'contact' %}">Contact</a>
+            </div>
             {% if user.is_authenticated %}
             <div>
                 <a href="{% url 'auth_logout' %}">Logout</a>

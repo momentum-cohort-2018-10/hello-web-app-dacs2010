@@ -31,15 +31,21 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # Core
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Third Party
     'django.contrib.humanize',
-    'collection',
     'registration',
+    
+    # My apps
+    'collection',
+ 
 ]
 
 MIDDLEWARE = [

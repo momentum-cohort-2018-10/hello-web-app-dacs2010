@@ -5,5 +5,6 @@ from django.db import models
 class Thing(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
-    # picture = models.ImageField(upload='thing_images/')
+    # image = models.ImageField(upload='static/images/')
+    # uploaded_at = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(unique=True)

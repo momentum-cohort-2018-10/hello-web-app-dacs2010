@@ -8,9 +8,13 @@ def index(request):
     number = 6
     things = Thing.objects.all()
     return render(request, 'index.html', {
-        'number': number,
         "things": things,
     })
+
+
+# def image_upload(request):
+#     if request.method == 'POST':
+#         image = ImageF
 
 
 def thing_detail(request, slug):
@@ -27,7 +31,6 @@ def edit_thing(request, slug):
         form = form_class(data=request.POST, instance=thing)
         if form.is_valid():
             form.save()
-            # feeling like this is the problem
             return redirect('thing_detail', slug=thing.slug)
     else:
         form = form_class(instance=thing)
