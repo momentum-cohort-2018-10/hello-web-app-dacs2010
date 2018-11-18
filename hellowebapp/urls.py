@@ -86,7 +86,7 @@ urlpatterns = [
           name='registration_register'),
      path('accounts/create_thing/', 
           views.create_thing,
-          name='registration_create-thing'),
+          name='registration_create_thing'),
 ]
 
 # if settings.DEBUG:

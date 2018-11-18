@@ -41,7 +41,7 @@ def edit_thing(request, slug):
     })
 
 
-def creat_thing(request):
+def create_thing(request):
     form_class = ThingForm
     if request.method == 'POST':
         form = form_class(request.POST)
